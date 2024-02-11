@@ -428,7 +428,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1365,8 +1365,8 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 60
     m_Data: {fileID: 533563755, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 996954592, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1368707206, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
   - m_RefCount: 1
@@ -1377,8 +1377,8 @@ Tilemap:
     m_Data: {fileID: 1260473483, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 1218800770, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 996954592, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 970488377, guid: 5554b7f1dd4696f48b3b9a1b6ecd6b5a, type: 3}
   - m_RefCount: 10
@@ -1586,7 +1586,8 @@ GameObject:
   - component: {fileID: 1546581825}
   - component: {fileID: 1546581824}
   - component: {fileID: 1546581823}
-  m_Layer: 0
+  - component: {fileID: 1546581826}
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1731,6 +1732,33 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1546581826
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546581821}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2005250790
 GameObject:
   m_ObjectHideFlags: 0
