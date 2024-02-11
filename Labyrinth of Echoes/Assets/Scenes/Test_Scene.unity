@@ -1662,7 +1662,7 @@ GameObject:
   - component: {fileID: 1546581825}
   - component: {fileID: 1546581824}
   - component: {fileID: 1546581823}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1837,6 +1837,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2739ac556c32b5a438aae4fb4ce8e4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3
+  movePoint: {fileID: 0}
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &1687488677
 SpriteRenderer:
   m_ObjectHideFlags: 0
