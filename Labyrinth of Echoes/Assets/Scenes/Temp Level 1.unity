@@ -2935,6 +2935,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1057293465701359813, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 928079648}
+    - target: {fileID: -1057293465701359813, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: movePoint
+      value: 
+      objectReference: {fileID: 928079647}
+    - target: {fileID: -1057293465701359813, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: whatStopsMovement.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1147669304698030253, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.517784
@@ -2984,6 +2996,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+--- !u!4 &928079647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1609762190626387303, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+  m_PrefabInstance: {fileID: 928079646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &928079648 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6422345409259805610, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+  m_PrefabInstance: {fileID: 928079646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1442648441
 GameObject:
   m_ObjectHideFlags: 0
