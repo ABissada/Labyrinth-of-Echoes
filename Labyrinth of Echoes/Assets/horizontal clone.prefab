@@ -56,8 +56,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: horizontal clone
       objectReference: {fileID: 0}
+    - target: {fileID: 8182152731397218203, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: m_Name
+      value: Horizontal Clone Move Point
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 214945807707399360, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+    - {fileID: -1057293465701359813, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -82,3 +87,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87e6986f14aed1940810da3b277fb393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3
+  horizontalMovePoint: {fileID: 0}
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 0
+  sr: {fileID: 0}

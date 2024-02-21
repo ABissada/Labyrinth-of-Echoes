@@ -28,14 +28,14 @@ public class horizontal_clone_movement : MonoBehaviour
 
             if (Input.GetAxisRaw("Horizontal") == -1f) {
                 sr.flipX = false;
-                if(!Physics2D.OverlapCircle(horizontalMovePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, whatStopsMovement)) {
+                if(!Physics2D.OverlapCircle(horizontalMovePoint.position - new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, whatStopsMovement)) {
                     horizontalMovePoint.position -= new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
             }
 
             else if (Input.GetAxisRaw("Horizontal") == 1f) {
                 sr.flipX = true;
-                if(!Physics2D.OverlapCircle(horizontalMovePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, whatStopsMovement)) {
+                if(!Physics2D.OverlapCircle(horizontalMovePoint.position - new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 0.2f, whatStopsMovement)) {
                     horizontalMovePoint.position -= new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
             }
