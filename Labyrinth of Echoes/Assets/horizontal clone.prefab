@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: horizontal clone
       objectReference: {fileID: 0}
+    - target: {fileID: 6422345409259805610, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b30370d7fd96f04f8ab19af9cb92c24, type: 3}
+    - target: {fileID: 6422345409259805610, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8182152731397218203, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
       propertyPath: m_Name
       value: Horizontal Clone Move Point

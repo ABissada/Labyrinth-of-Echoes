@@ -140,6 +140,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 243762973}
     - target: {fileID: 5179102901988288574, guid: 0613f2410e6c1b342a036a7ff8dc50c0, type: 3}
+      propertyPath: verticalMovePoint
+      value: 
+      objectReference: {fileID: 369563303}
+    - target: {fileID: 5179102901988288574, guid: 0613f2410e6c1b342a036a7ff8dc50c0, type: 3}
       propertyPath: whatStopsMovement.m_Bits
       value: 8
       objectReference: {fileID: 0}
@@ -195,6 +199,11 @@ PrefabInstance:
 --- !u!212 &243762973 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 406694575353786566, guid: 0613f2410e6c1b342a036a7ff8dc50c0, type: 3}
+  m_PrefabInstance: {fileID: 243762972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &369563303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5391681484319038987, guid: 0613f2410e6c1b342a036a7ff8dc50c0, type: 3}
   m_PrefabInstance: {fileID: 243762972}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &458572987
