@@ -131,7 +131,7 @@ MonoBehaviour:
   movePoint: {fileID: 0}
   whatStopsMovement:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   sr: {fileID: 0}
 --- !u!70 &738990730719791711
 CapsuleCollider2D:

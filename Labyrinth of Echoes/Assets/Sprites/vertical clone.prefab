@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5741766280299385931, guid: cdccd458221c15749b0fd64894d050a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 47f3d7ee71afc094fad1db1605db271b, type: 3}
     m_RemovedComponents:
     - {fileID: 5859643836713589710, guid: cdccd458221c15749b0fd64894d050a1, type: 3}
     m_RemovedGameObjects: []
@@ -78,3 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbe11097caca1e409eed48d9ca8f127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3
+  verticalMovePoint: {fileID: 0}
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 8
+  sr: {fileID: 0}
