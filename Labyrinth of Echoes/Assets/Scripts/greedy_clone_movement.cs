@@ -29,7 +29,7 @@ public class greedy_clone_movement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, greedyMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U)) {
+            if (Input.GetKey(KeyCode.U) && moves.Count != 0) {
                 greedyMovePoint.position = moves.Pop();
             }
 

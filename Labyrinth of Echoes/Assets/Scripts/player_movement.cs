@@ -36,8 +36,9 @@ public class player_movement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U)) {
+            if (Input.GetKey(KeyCode.U) && moves.Count != 0) {
                 playerMovePoint.position = moves.Pop();
+                moveCount -= 1;
             }
 
             if (Input.GetAxisRaw("Horizontal") == -1f) {
