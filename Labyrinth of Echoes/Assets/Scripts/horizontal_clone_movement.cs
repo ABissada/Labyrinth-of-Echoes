@@ -28,7 +28,7 @@ public class horizontal_clone_movement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, horizontalMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U)) {
+            if (Input.GetKey(KeyCode.U) && moves.Count != 0) {
                 horizontalMovePoint.position = moves.Pop();
             }
 
