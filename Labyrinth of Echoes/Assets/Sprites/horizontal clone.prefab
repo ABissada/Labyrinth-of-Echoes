@@ -76,14 +76,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1379229947829695876, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5859643836713589710}
+      addedObject: {fileID: -798878357137838825}
   m_SourcePrefab: {fileID: 100100000, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
 --- !u!1 &408166521190038117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1379229947829695876, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
   m_PrefabInstance: {fileID: 1625266329701650401}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5859643836713589710
+--- !u!114 &-798878357137838825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,12 +92,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 408166521190038117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87e6986f14aed1940810da3b277fb393, type: 3}
+  m_Script: {fileID: 11500000, guid: 02c5aa308b6a56f41aa0def666219001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  horizontalMovePoint: {fileID: 0}
+  playerMovePoint: {fileID: 0}
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 8
-  sr: {fileID: 0}
+  sr: {fileID: 5741766280299385931}
+  moveCount: 0
+--- !u!212 &5741766280299385931 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6422345409259805610, guid: c50827fad70ca034991fc8a8c42a301e, type: 3}
+  m_PrefabInstance: {fileID: 1625266329701650401}
+  m_PrefabAsset: {fileID: 0}
