@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mail;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
@@ -20,6 +21,11 @@ public class player_movement_refactored : MonoBehaviour
 
     public int moveCount = 0;
 
+    public AudioSource audioSource;
+    public AudioClip[] audioClipArray;
+    public float volume=0.5f;
+
+
     Stack<Vector3> moves = new Stack<Vector3>();
 
 
@@ -27,6 +33,7 @@ public class player_movement_refactored : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerMovePoint = FindObjectOfType<Transform>();
         playerMovePoint.parent = null;
         
     }
@@ -61,6 +68,7 @@ public class player_movement_refactored : MonoBehaviour
         if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0.2f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
             moves.Push(GameObject.Find(gameObject.name).transform.position);
+            audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
         }
         if (Horizontal == 1f) {
             sr.flipX = false;
