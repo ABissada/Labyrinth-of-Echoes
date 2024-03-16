@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Mail;
+using System.Threading;
 using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+
 
 public class player_movement_refactored : MonoBehaviour
 {
@@ -25,6 +28,8 @@ public class player_movement_refactored : MonoBehaviour
     public AudioClip[] audioClipArray;
     public float volume=0.5f;
 
+    public Stopwatch stopWatch = new Stopwatch();
+
 
     Stack<Vector3> moves = new Stack<Vector3>();
 
@@ -33,7 +38,6 @@ public class player_movement_refactored : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerMovePoint = FindObjectOfType<Transform>();
         playerMovePoint.parent = null;
         
     }
@@ -52,6 +56,9 @@ public class player_movement_refactored : MonoBehaviour
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             if (horizontal != 0 || vertical != 0){
+                if (horizontal != 0 && vertical != 0) {
+                    vertical = 0f;
+                }
                 callMove(horizontal, vertical);
             }
 
@@ -65,10 +72,12 @@ public class player_movement_refactored : MonoBehaviour
 
     public void move(float Horizontal, float Vertical){
         moveCount += 1;
-        if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0.2f, whatStopsMovement)) {
+        if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
             moves.Push(GameObject.Find(gameObject.name).transform.position);
-            audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
+            if(audioSource) {
+                audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
+            }
         }
         if (Horizontal == 1f) {
             sr.flipX = false;
