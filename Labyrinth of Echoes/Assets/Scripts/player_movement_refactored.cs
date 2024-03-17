@@ -86,10 +86,6 @@ public class player_movement_refactored : MonoBehaviour
         moveCount += 1;
         if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
-            moves.Push(GameObject.Find(gameObject.name).transform.position);
-            if (audioSource) {
-            audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
-            }
         }
         if (Horizontal == 1f) {
             sr.flipX = false;
@@ -97,6 +93,10 @@ public class player_movement_refactored : MonoBehaviour
         if (Horizontal == -1f) {
             sr.flipX = true;
         }
+        if (audioSource) {
+            audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
+        }
+        moves.Push(GameObject.Find(gameObject.name).transform.position);
     }
 
     public void undo(){
