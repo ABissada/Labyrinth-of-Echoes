@@ -5,30 +5,31 @@ using TMPro;
 
 public class remaining_moves : MonoBehaviour
 {
-    public int max_moves;
-
-    public player_movement_refactored P;
-
-    public bool outOfMoves;
+    public levelMenuConfig config;
 
     public TextMeshProUGUI moves_remaining;
+
+    private player_movement_refactored[] P;
 
     // Start is called before the first frame update
     void Start()
     {
-        outOfMoves = false;
-        P = FindObjectOfType<player_movement_refactored>();
-        moves_remaining.SetText(max_moves.ToString());
+        P = config.list_of_characters;
+        P[0] = FindObjectOfType<player_movement_refactored>();
+        moves_remaining.SetText(config.maxMoves.ToString());
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        moves_remaining.SetText((max_moves - P.moveCount).ToString());
-        if (max_moves - P.moveCount <= 0)
+        for (int i = 0; i<P.Length; i++)
         {
-            P.counter = 0;
+            moves_remaining.SetText((config.maxMoves - P[i].moveCount).ToString());
+            if (config.maxMoves - P[i].moveCount <= 0)
+            {
+                P[i].counter = 0;
+            }
         }
 
     }

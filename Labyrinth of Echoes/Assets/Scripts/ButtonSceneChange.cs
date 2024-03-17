@@ -6,20 +6,10 @@ using UnityEngine.SceneManagement;
 public class ButtonSceneChange : MonoBehaviour
 {
     public int sceneIndex;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
+
 }

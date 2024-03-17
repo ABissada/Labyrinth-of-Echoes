@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3b30370d7fd96f04f8ab19af9cb92c24, type: 3}
+    - target: {fileID: 2371050965890233402, guid: 98e5b1261b74a1141908b321f17954cc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3700519769821121463, guid: 98e5b1261b74a1141908b321f17954cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.07
@@ -105,3 +109,5 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   audioClipArray: []
   volume: 0.5
+  callable: 0
+  counter: 0
