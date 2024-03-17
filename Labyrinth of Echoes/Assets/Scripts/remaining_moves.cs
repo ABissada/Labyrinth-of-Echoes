@@ -26,13 +26,10 @@ public class remaining_moves : MonoBehaviour
     void Update()
     {
         moves_remaining.SetText((max_moves - P.moveCount).ToString());
-        if (max_moves - P.moveCount == 0)
+        if (max_moves - P.moveCount <= 0)
         {
-            outOfMoves = true;
+            P.counter = 0;
         }
-        else
-        {
-            outOfMoves = false;
-        }
+
     }
 }
