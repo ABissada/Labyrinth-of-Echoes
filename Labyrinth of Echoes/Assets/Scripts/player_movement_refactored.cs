@@ -26,7 +26,11 @@ public class player_movement_refactored : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip[] audioClipArray;
-    public float volume=0.5f;
+    public float volume=1f;
+
+    public bool callable;
+
+    public int counter = 0;
 
     public Stopwatch stopWatch = new Stopwatch();
 
@@ -39,12 +43,18 @@ public class player_movement_refactored : MonoBehaviour
     void Start()
     {
         playerMovePoint.parent = null;
+        callable = true;
         
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        counter += 1;
+        if (counter > 20) {
+            callable = true;
+        }
+
         transform.position = Vector3.MoveTowards(transform.position, playerMovePoint.position, moveSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
@@ -55,7 +65,7 @@ public class player_movement_refactored : MonoBehaviour
 
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
-            if (horizontal != 0 || vertical != 0){
+            if ((horizontal != 0 || vertical != 0) && callable == true){
                 if (horizontal != 0 && vertical != 0) {
                     vertical = 0f;
                 }
@@ -63,11 +73,13 @@ public class player_movement_refactored : MonoBehaviour
             }
 
 
-            }
+        }
     }
 
     public virtual void callMove(float horizontal, float vertical){
         move(horizontal, vertical);
+        counter = 0;
+        callable = false;
     }
 
     public void move(float Horizontal, float Vertical){
@@ -75,8 +87,8 @@ public class player_movement_refactored : MonoBehaviour
         if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
             moves.Push(GameObject.Find(gameObject.name).transform.position);
-            if(audioSource) {
-                audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
+            if (audioSource) {
+            audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
             }
         }
         if (Horizontal == 1f) {

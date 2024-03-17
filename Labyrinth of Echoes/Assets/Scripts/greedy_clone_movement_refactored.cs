@@ -12,5 +12,7 @@ public class greedy_clone_movement_refactored : player_movement_refactored {
     public override void callMove(float horizontal, float vertical){
         move(horizontal, vertical);
         move(horizontal, vertical);
+        counter = 0;
+        callable = false;
     }
 }
