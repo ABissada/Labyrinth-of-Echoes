@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2968889251843142305, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
       propertyPath: m_Name
-      value: player prefab (use this one) Variant
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 6334781871640783941, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
       propertyPath: m_LocalPosition.x
