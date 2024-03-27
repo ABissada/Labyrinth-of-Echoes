@@ -63,7 +63,7 @@ public class player_movement_refactored : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0 && callable == true) {
+            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0 &&(callable == true || counter == -1)) {
                 undo();
             }
 
