@@ -64,7 +64,7 @@ public class player_movement_refactored : MonoBehaviour
         }
 
         counter2 += 1;
-        if (counter > 20) {
+        if (counter2 > 20) {
             callable2 = true;
         }
 
