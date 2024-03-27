@@ -15,7 +15,6 @@ public class remaining_moves : MonoBehaviour
     void Start()
     {
         P = config.list_of_characters;
-        P[0] = FindObjectOfType<player_movement_refactored>();
         moves_remaining.SetText(config.maxMoves.ToString());
 
     }
