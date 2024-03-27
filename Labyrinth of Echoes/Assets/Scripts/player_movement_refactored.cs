@@ -117,8 +117,8 @@ public class player_movement_refactored : MonoBehaviour
     public void undo(){
         playerMovePoint.position = movesPos.Pop();
         moveCount -= 1;
-        counter = 0;
-        callable = false;
+        counter2 = 0;
+        callable2 = false;
     }
 
 }
