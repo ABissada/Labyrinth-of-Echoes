@@ -35,7 +35,11 @@ public class player_movement_refactored : MonoBehaviour
     public Stopwatch stopWatch = new Stopwatch();
 
 
-    Stack<Vector3> moves = new Stack<Vector3>();
+    Stack<Vector3> movesPos = new Stack<Vector3>();
+    
+    public static Stack<float> movesX = new Stack<float>();
+    public static Stack<float> movesY = new Stack<float>();
+
 
 
 
@@ -59,7 +63,7 @@ public class player_movement_refactored : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U) && moves.Count != 0) {
+            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0) {
                 undo();
             }
 
@@ -96,11 +100,13 @@ public class player_movement_refactored : MonoBehaviour
         if (audioSource) {
             audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
         }
-        moves.Push(GameObject.Find(gameObject.name).transform.position);
+        movesPos.Push(GameObject.Find(gameObject.name).transform.position);
+        movesX.Push(Horizontal);
+        movesY.Push(Vertical);
     }
 
     public void undo(){
-        playerMovePoint.position = moves.Pop();
+        playerMovePoint.position = movesPos.Pop();
         moveCount -= 1;
     }
 
