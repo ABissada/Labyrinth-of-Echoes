@@ -32,6 +32,10 @@ public class player_movement_refactored : MonoBehaviour
 
     public int counter = 0;
 
+    public bool callable2;
+
+    public int counter2 = 0;
+
     public Stopwatch stopWatch = new Stopwatch();
 
 
@@ -59,11 +63,16 @@ public class player_movement_refactored : MonoBehaviour
             callable = true;
         }
 
+        counter2 += 1;
+        if (counter > 20) {
+            callable2 = true;
+        }
+
         transform.position = Vector3.MoveTowards(transform.position, playerMovePoint.position, moveSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0 &&(callable == true || counter == -1)) {
+            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0 && (callable2 == true)) {
                 undo();
             }
 
