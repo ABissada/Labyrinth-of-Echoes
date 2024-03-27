@@ -63,7 +63,7 @@ public class player_movement_refactored : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerMovePoint.position) == 0f) {
 
-            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0) {
+            if (Input.GetKey(KeyCode.U) && movesPos.Count != 0 && callable == true) {
                 undo();
             }
 
@@ -88,6 +88,7 @@ public class player_movement_refactored : MonoBehaviour
 
     public void move(float Horizontal, float Vertical){
         moveCount += 1;
+        movesPos.Push(GameObject.Find(gameObject.name).transform.position);
         if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
         }
@@ -100,7 +101,6 @@ public class player_movement_refactored : MonoBehaviour
         if (audioSource) {
             audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
         }
-        movesPos.Push(GameObject.Find(gameObject.name).transform.position);
         movesX.Push(Horizontal);
         movesY.Push(Vertical);
     }
@@ -108,6 +108,8 @@ public class player_movement_refactored : MonoBehaviour
     public void undo(){
         playerMovePoint.position = movesPos.Pop();
         moveCount -= 1;
+        counter = 0;
+        callable = false;
     }
 
 }
