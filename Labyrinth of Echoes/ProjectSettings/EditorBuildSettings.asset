@@ -33,9 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level 3.unity
     guid: cd9733e05080f034d8bcf22d40520f56
   - enabled: 1
-    path: Assets/Scenes/Levels-RR-WIP/Level N+0 (RR).unity
+    path: Assets/Scenes/Levels-RR-WIP/Level 0 (RR).unity
     guid: 7ccba080f2c04471881483041676d768
   - enabled: 1
-    path: Assets/Scenes/Levels-RR-WIP/Level N+1 (RR).unity
+    path: Assets/Scenes/Levels-RR-WIP/Level 1 (RR).unity
     guid: 7894f2968924d4a729b552862e736a7d
+  - enabled: 1
+    path: Assets/Scenes/Levels-RR-WIP/Level 2 (RR).unity
+    guid: 1ce10473546aa9f4bb89144dc8249e2c
+  - enabled: 1
+    path: Assets/Scenes/Levels-RR-WIP/Level 3 (RR).unity
+    guid: c847f99a64b0f454791d2b00c7c7efa8
   m_configObjects: {}
