@@ -9,7 +9,6 @@ public class vertical_clone_movement_refactored : player_movement_refactored {
 
 
     public override void callMove(float horizontal, float vertical){
-        moveCount += 1;
         move(horizontal, vertical*-1);
         counter = 0;
         callable = false;
