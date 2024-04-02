@@ -90,13 +90,13 @@ public class player_movement_refactored : MonoBehaviour
     }
 
     public virtual void callMove(float horizontal, float vertical){
+        moveCount += 1;
         move(horizontal, vertical);
         counter = 0;
         callable = false;
     }
 
     public void move(float Horizontal, float Vertical){
-        moveCount += 1;
         movesPos.Push(GameObject.Find(gameObject.name).transform.position);
         if(!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(Horizontal, Vertical, 0f), 0f, whatStopsMovement)) {
             playerMovePoint.position += new Vector3(Horizontal, Vertical, 0f);
