@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisSceneID: 3
   maxMoves: 35
+  list_of_characters: []
 --- !u!1 &1008099858361704803
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,8 +493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 4919058309531036338}
-  P: {fileID: 0}
-  outOfMoves: 0
   moves_remaining: {fileID: 4532556544700654040}
 --- !u!1 &1729549096840929680
 GameObject:
