@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneTrigger : MonoBehaviour
 {
-    public int sceneIndex;
+
+    public string character;
+
+    public bool flag = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +23,17 @@ public class SceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "player")
+        if(collision.gameObject.name == character)
         {
             print("Hit Trigger");
-            SceneManager.LoadScene(sceneIndex,LoadSceneMode.Single);
+            flag = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision){
+        if(collision.gameObject.name == character)
+        {
+            print("Hit Trigger");
+            flag = false;
         }
     }
 
