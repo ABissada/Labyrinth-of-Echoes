@@ -5541,7 +5541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneTriggers:
   - {fileID: 1940193720}
-  sceneIndex: 0
+  gotoScene: 1
+  levelNum: 1
 --- !u!4 &1879854133
 Transform:
   m_ObjectHideFlags: 0

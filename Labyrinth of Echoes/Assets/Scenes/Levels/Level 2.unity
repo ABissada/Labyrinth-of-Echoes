@@ -3275,7 +3275,8 @@ MonoBehaviour:
   SceneTriggers:
   - {fileID: 1764070042}
   - {fileID: 1826778166}
-  sceneIndex: 0
+  gotoScene: 1
+  levelNum: 2
 --- !u!4 &927550048
 Transform:
   m_ObjectHideFlags: 0
