@@ -90,5 +90,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f68b891c7bed274cb2ba29ccd07e66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: player
+  character: player prefab (use this one) Variant
   flag: 0
