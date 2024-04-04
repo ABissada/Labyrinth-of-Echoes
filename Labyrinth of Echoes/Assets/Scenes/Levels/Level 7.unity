@@ -748,7 +748,7 @@ MonoBehaviour:
   - {fileID: 969310691}
   - {fileID: 314367192}
   gotoScene: 1
-  levelNum: 0
+  levelNum: 7
 --- !u!4 &414925910
 Transform:
   m_ObjectHideFlags: 0
