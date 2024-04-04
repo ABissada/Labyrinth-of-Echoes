@@ -39,7 +39,7 @@ public class player_movement_refactored : MonoBehaviour
     public Stopwatch stopWatch = new Stopwatch();
 
 
-    Stack<Vector3> movesPos = new Stack<Vector3>();
+    public Stack<Vector3> movesPos = new Stack<Vector3>();
     
     public static Stack<float> movesX = new Stack<float>();
     public static Stack<float> movesY = new Stack<float>();
@@ -114,7 +114,7 @@ public class player_movement_refactored : MonoBehaviour
         movesY.Push(Vertical);
     }
 
-    public void undo(){
+    public virtual void undo(){
         playerMovePoint.position = movesPos.Pop();
         movesX.Pop();
         movesY.Pop();
