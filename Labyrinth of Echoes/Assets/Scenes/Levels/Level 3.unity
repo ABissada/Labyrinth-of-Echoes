@@ -9264,7 +9264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919058309531036338, guid: 611ddb0f75ae34d948ae32c321e4c37d, type: 3}
       propertyPath: maxMoves
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4919058309531036338, guid: 611ddb0f75ae34d948ae32c321e4c37d, type: 3}
       propertyPath: thisSceneID
