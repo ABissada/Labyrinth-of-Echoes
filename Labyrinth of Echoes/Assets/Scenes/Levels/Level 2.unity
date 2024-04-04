@@ -4956,6 +4956,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1776534900977801876, guid: 929853ea80c48734ca6396f130a95285, type: 3}
+      propertyPath: character
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 4699264119888895042, guid: 929853ea80c48734ca6396f130a95285, type: 3}
       propertyPath: m_Name
       value: Player Trigger
