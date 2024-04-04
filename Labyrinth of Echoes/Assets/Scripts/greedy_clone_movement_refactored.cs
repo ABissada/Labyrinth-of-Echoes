@@ -15,4 +15,12 @@ public class greedy_clone_movement_refactored : player_movement_refactored {
         counter = 0;
         callable = false;
     }
+
+    public override void undo(){
+        playerMovePoint.position = movesPos.Pop();
+        playerMovePoint.position = movesPos.Pop();
+        moveCount -= 1;
+        counter2 = 0;
+        callable2 = false;
+    }
 }
