@@ -9268,7 +9268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919058309531036338, guid: 611ddb0f75ae34d948ae32c321e4c37d, type: 3}
       propertyPath: thisSceneID
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4919058309531036338, guid: 611ddb0f75ae34d948ae32c321e4c37d, type: 3}
       propertyPath: list_of_characters.Array.size
