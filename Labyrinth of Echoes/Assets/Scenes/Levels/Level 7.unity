@@ -710,6 +710,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8506783737179068423, guid: 929853ea80c48734ca6396f130a95285, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506783737179068423, guid: 929853ea80c48734ca6396f130a95285, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6656,6 +6664,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362437983002191806, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362437983002191806, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2968889251843142305, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
       propertyPath: m_Name
       value: player prefab (use this one) Variant
@@ -8217,6 +8233,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6820334791816906506, guid: 25df067588e3400469d78bc334bae9fe, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6820334791816906506, guid: 25df067588e3400469d78bc334bae9fe, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2238130637215539363, guid: 25df067588e3400469d78bc334bae9fe, type: 3}
       propertyPath: m_Name
       value: Slow Trigger
@@ -8321,6 +8345,14 @@ PrefabInstance:
     - target: {fileID: 4854137253805981290, guid: 92e9e63d25f9f1e499ba0404167123cb, type: 3}
       propertyPath: m_Name
       value: Slow clone Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379498912903195509, guid: 92e9e63d25f9f1e499ba0404167123cb, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379498912903195509, guid: 92e9e63d25f9f1e499ba0404167123cb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

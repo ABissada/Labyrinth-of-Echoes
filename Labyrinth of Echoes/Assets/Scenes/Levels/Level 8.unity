@@ -131,6 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2362437983002191806, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362437983002191806, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2968889251843142305, guid: f56cc30240c32c9429a30ce1ebde9488, type: 3}
       propertyPath: m_Name
       value: player prefab (use this one) Variant
@@ -299,6 +307,14 @@ PrefabInstance:
     - target: {fileID: 8204240952587096618, guid: 4d7c8183c38aa4b448703e1bec858c4e, type: 3}
       propertyPath: m_Name
       value: Vertical clone Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656442345052636981, guid: 4d7c8183c38aa4b448703e1bec858c4e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656442345052636981, guid: 4d7c8183c38aa4b448703e1bec858c4e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9623,6 +9639,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4484690069713089841, guid: 422e0c613d1a664479b16865f1065bd9, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484690069713089841, guid: 422e0c613d1a664479b16865f1065bd9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8203318540746100106, guid: 422e0c613d1a664479b16865f1065bd9, type: 3}
       propertyPath: m_Name
       value: Vertical Trigger
@@ -12126,6 +12150,14 @@ PrefabInstance:
     - target: {fileID: 8335742912013375988, guid: 929853ea80c48734ca6396f130a95285, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506783737179068423, guid: 929853ea80c48734ca6396f130a95285, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506783737179068423, guid: 929853ea80c48734ca6396f130a95285, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
