@@ -52,6 +52,8 @@ public class player_movement_refactored : MonoBehaviour
     {
         playerMovePoint.parent = null;
         callable = true;
+        movesX.Clear();
+        movesY.Clear();
         
     }
 
