@@ -7,6 +7,10 @@ public class ButtonSceneChange : MonoBehaviour
 {
     public int sceneIndex;
 
+    
+    public void resetGame(){
+        PlayerPrefs.DeleteAll();
+    }
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);

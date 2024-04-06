@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Test_Scene.unity
     guid: d214c334953cf074b816902c12ac9381
+  - enabled: 1
+    path: Assets/Scenes/Menus/Congrats.unity
+    guid: b80e25a28304f734a98ccf73cef76ef1
   m_configObjects: {}
