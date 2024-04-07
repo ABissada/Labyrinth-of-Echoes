@@ -55,7 +55,6 @@ public class player_movement_refactored : MonoBehaviour
         movesX.Clear();
         movesY.Clear();
         //movesMade = 0;
-        
     }
 
     // Update is called once per frame
