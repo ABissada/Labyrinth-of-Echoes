@@ -307,7 +307,7 @@ MonoBehaviour:
   SceneTriggers:
   - {fileID: 230433491}
   - {fileID: 62276510}
-  gotoScene: 1
+  gotoScene: 11
   levelNum: 9
 --- !u!4 &321848884
 Transform:
