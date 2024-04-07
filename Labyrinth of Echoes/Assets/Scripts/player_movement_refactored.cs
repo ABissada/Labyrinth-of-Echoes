@@ -54,12 +54,15 @@ public class player_movement_refactored : MonoBehaviour
         callable = true;
         movesX.Clear();
         movesY.Clear();
+        //movesMade = 0;
         
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        //before = false;
+
         counter += 1;
         if (counter > 20) {
             callable = true;
@@ -112,8 +115,7 @@ public class player_movement_refactored : MonoBehaviour
         if (audioSource) {
             audioSource.PlayOneShot(audioClipArray[UnityEngine.Random.Range(0, audioClipArray.Length)], volume);
         }
-        movesX.Push(Horizontal);
-        movesY.Push(Vertical);
+        updateMoveStacks(Horizontal, Vertical);
     }
 
     public virtual void undo(){
@@ -123,6 +125,11 @@ public class player_movement_refactored : MonoBehaviour
         moveCount -= 1;
         counter2 = 0;
         callable2 = false;
+    }
+
+    public static void updateMoveStacks(float Horizontal, float Vertical) {
+        movesX.Push(Horizontal);
+        movesY.Push(Vertical);
     }
 
 }
